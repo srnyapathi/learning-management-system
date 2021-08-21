@@ -1,8 +1,2 @@
-package in.srnyapathi.lms.domain;
-
-public enum Type {
-  INTERACTIVE,
-  OFFLINE,
-  ONLINE,
-  ONDEMAND
+package in.srnyapathi.lms.domain;public enum Type {
 }

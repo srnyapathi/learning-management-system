@@ -1,6 +1,2 @@
-package in.srnyapathi.lms.domain;
-
-public enum BatchType {
-  ONLINE,
-  OFFLINE,
+package in.srnyapathi.lms.domain;public enum BatchType {
 }
