@@ -1,0 +1,13 @@
+spring:
+ data:
+   mongodb:
+    uri:
+
+
+
+
+
+
+
+
+
