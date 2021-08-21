@@ -1,4 +1,4 @@
-package in.srnyapathi.lms.domain;
+package in.srnyapathi.lms.model;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;

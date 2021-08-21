@@ -1,4 +1,4 @@
-package in.srnyapathi.lms.mappers;
+package in.srnyapathi.lms.mappers.pojo;
 
 import in.srnyapathi.lms.model.Course;
 import org.mapstruct.Mapper;

@@ -1,3 +1,6 @@
 package in.srnyapathi.lms.repository;
 
-public interface InstructorRepository {}
+import in.srnyapathi.lms.domain.Instructor;
+import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
+
+public interface InstructorRepository extends ReactiveMongoRepository<Instructor, String> {}

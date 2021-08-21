@@ -1,6 +1,6 @@
 package in.srnyapathi.lms.controller;
 
-import in.srnyapathi.lms.mappers.CourseMapper;
+import in.srnyapathi.lms.mappers.pojo.CourseMapper;
 import in.srnyapathi.lms.model.Course;
 import in.srnyapathi.lms.service.CourseService;
 import java.util.function.Consumer;
@@ -22,9 +22,9 @@ public class CourseController {
 
   Consumer<Course> mapperLog = mapperVal -> log.debug("Value returning from mapper {}", mapperVal);
   Function<in.srnyapathi.lms.domain.Course, Course> domainToDto =
-      cr -> CourseMapper.INSTANCE.courseDomainToDto(cr);
+      CourseMapper.INSTANCE::courseDomainToDto;
   Function<Course, in.srnyapathi.lms.domain.Course> dtoToDomain =
-      cr -> CourseMapper.INSTANCE.courseDtoToDomain(cr);
+      CourseMapper.INSTANCE::courseDtoToDomain;
   Consumer<in.srnyapathi.lms.domain.Course> valueFromService =
       srVal -> log.debug("Value returning from service {} ", srVal);
   Consumer<Void> valueFromDelete = srVal -> log.debug("service layer value deleted from db");

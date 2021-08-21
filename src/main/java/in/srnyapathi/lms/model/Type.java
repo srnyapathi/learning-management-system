@@ -1,4 +1,4 @@
-package in.srnyapathi.lms.domain;
+package in.srnyapathi.lms.model;
 
 public enum Type {
   INTERACTIVE,

@@ -1,4 +1,4 @@
-package in.srnyapathi.lms.domain;
+package in.srnyapathi.lms.model;
 
 import java.util.List;
 import lombok.AllArgsConstructor;

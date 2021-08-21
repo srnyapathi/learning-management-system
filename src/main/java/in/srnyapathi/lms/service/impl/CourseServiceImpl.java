@@ -1,7 +1,8 @@
-package in.srnyapathi.lms.service;
+package in.srnyapathi.lms.service.impl;
 
 import in.srnyapathi.lms.domain.Course;
 import in.srnyapathi.lms.repository.CourseRepository;
+import in.srnyapathi.lms.service.CourseService;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -28,31 +29,16 @@ public class CourseServiceImpl implements CourseService {
 
   @Override
   public Mono<Course> save(@NonNull Course course) {
-    return repository
-        .save(course)
-        .doOnNext(
-            cr -> {
-              log.debug("Course Created {}", cr);
-            });
+    return repository.save(course).doOnNext(cr -> log.debug("Course Created {}", cr));
   }
 
   @Override
   public Mono<Course> edit(String id, @NonNull Course course) {
-    return repository
-        .save(course)
-        .doOnNext(
-            cr -> {
-              log.debug("Course modified {} ", cr);
-            });
+    return repository.save(course).doOnNext(cr -> log.debug("Course modified {} ", cr));
   }
 
   @Override
   public Mono<Void> delete(String id) {
-    return repository
-        .deleteById(id)
-        .doOnNext(
-            cr -> {
-              log.debug("Course Deleted {} ", cr);
-            });
+    return repository.deleteById(id).doOnNext(cr -> log.debug("Course Deleted {} ", cr));
   }
 }
