@@ -1,2 +1,3 @@
-package in.srnyapathi.lms.domain;public enum Type {
-}
+package in.srnyapathi.lms.domain;
+
+public enum Type {}

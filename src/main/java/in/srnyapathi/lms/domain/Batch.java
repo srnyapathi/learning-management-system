@@ -1,2 +1,3 @@
-package in.srnyapathi.lms.domain;public class Batch {
-}
+package in.srnyapathi.lms.domain;
+
+public class Batch {}

@@ -10,6 +10,6 @@ import lombok.experimental.Accessors;
 @NoArgsConstructor
 @Accessors(chain = true)
 public class Course {
-    private String id;
-    private String courseName;
+  private String id;
+  private String courseName;
 }

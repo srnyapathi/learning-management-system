@@ -9,10 +9,9 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @NoArgsConstructor
 @Data
 public class Instructor {
-    @Id
-    private String id;
-    private String name;
-    private String title;
-    private String qualification;
-    private Integer exp;
+  @Id private String id;
+  private String name;
+  private String title;
+  private String qualification;
+  private Integer exp;
 }

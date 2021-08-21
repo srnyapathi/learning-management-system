@@ -14,10 +14,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @AllArgsConstructor
 @ToString
 public class Subject {
-    @Id
-    private String id;
-    private String name;
-    private Type type;
-    @DBRef
-    private Instructor instructorName;
+  @Id private String id;
+  private String name;
+  private Type type;
+  @DBRef private Instructor instructorName;
 }

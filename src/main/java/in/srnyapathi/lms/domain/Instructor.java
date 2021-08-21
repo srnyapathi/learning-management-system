@@ -1,2 +1,3 @@
-package in.srnyapathi.lms.domain;public class Instructor {
-}
+package in.srnyapathi.lms.domain;
+
+public class Instructor {}

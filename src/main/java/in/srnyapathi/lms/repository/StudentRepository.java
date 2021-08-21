@@ -1,2 +1,3 @@
-package in.srnyapathi.lms.repository;public interface StudentRepository {
-}
+package in.srnyapathi.lms.repository;
+
+public interface StudentRepository {}
