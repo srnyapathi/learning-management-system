@@ -1,15 +1,12 @@
-package in.srnyapathi.lms.domain;
+package in.srnyapathi.lms.model;
 
 import lombok.Data;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+import lombok.ToString;
 
 @Data
-@Document
+@ToString
 public class Student {
-    @Id
-    private String id;
-    private String firstName;
-    private String lastName;
-
+  private String id;
+  private String firstName;
+  private String lastName;
 }

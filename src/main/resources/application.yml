@@ -1,7 +1,8 @@
 spring:
  data:
    mongodb:
-    uri:
+    uri: mongodb+srv://lms_admin:nnPZVXyGrp7dx5fN@cluster0.pbjpn.mongodb.net/lms_admin_data?retryWrites=true&w=majority
+
 
 
 

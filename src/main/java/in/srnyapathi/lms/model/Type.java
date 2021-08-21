@@ -1,9 +1,8 @@
-package in.srnyapathi.lms.domain;
+package in.srnyapathi.lms.model;
 
 public enum Type {
-    INTERACTIVE,
-    OFFLINE,
-    ONLINE,
-    ONDEMAND
-
+  INTERACTIVE,
+  OFFLINE,
+  ONLINE,
+  ONDEMAND
 }
